@@ -15,7 +15,7 @@ const Description = ({video}) => {
     };
 
     useEffect(() => {
-        if (isSuccess) navigate("/");
+        if (isSuccess) navigate("/RestApiTube");
     }, [isSuccess, navigate]);
 
   return (
@@ -29,7 +29,7 @@ const Description = ({video}) => {
                 </h2>
 
                 <div className="flex gap-6 w-full justify-end">
-                    <Link to={`/videos/edit/${id}`} className="flex gap-1 items-center hover:text-blue-600">
+                    <Link to={`/RestApiTube/videos/edit/${id}`} className="flex gap-1 items-center hover:text-blue-600">
                         <div className="shrink-0">
                            <FaEdit className='w-4'/>
                         </div>

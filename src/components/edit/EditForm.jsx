@@ -31,7 +31,7 @@ const EditForm = ({ video }) => {
     try {
       editVideo({ id, data });
       alert("Video updated successfully");
-      navigate("/");
+      navigate("/RestApiTube");
     } catch (error) {
       alert("An error has occurred");
     }

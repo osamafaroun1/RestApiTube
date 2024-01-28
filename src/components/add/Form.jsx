@@ -31,7 +31,7 @@ const Form = () => {
     try {
       addVideo(data);
       alert("Video added successfully");
-      navigate("/");
+      navigate("/RestApiTube");
     } catch (error) {
       alert("An error has occurred");
     }

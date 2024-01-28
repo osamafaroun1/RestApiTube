@@ -6,7 +6,7 @@ const RelatedVideo = ({video}) => {
   return (
     <div className="w-full flex flex-row gap-2 mb-4">
             <div className="relative w-[168px] h-[94px] flex-none duration-300 hover:scale-[1.03]">
-                <Link to={`/videos/${video.id}`}>
+                <Link to={`/RestApiTube/videos/${video.id}`}>
                     <img
                         src={video.thumbnail}
                         className="object-cover"
@@ -19,7 +19,7 @@ const RelatedVideo = ({video}) => {
             </div>
 
             <div className="flex flex-col w-full">
-                <Link to={`/videos/${video.id}`}>
+                <Link to={`/RestApiTube/videos/${video.id}`}>
                     <p className="text-slate-900 text-sm font-semibold">
                        {video.title}
                     </p>

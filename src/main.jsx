@@ -19,15 +19,15 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "RestApiTube/videos/:videoId",
+        path: "/RestApiTube/videos/:videoId",
         element: <SingleVideo />,
       },
       {
-        path: "RestApiTube/videos/add",
+        path: "/RestApiTube/videos/add",
         element: <AddVideo />,
       },
       {
-        path: "RestApiTube/videos/edit/:videoId",
+        path: "/RestApiTube/videos/edit/:videoId",
         element: <EditVideo />,
       },
     ],
