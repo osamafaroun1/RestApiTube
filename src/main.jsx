@@ -11,23 +11,23 @@ import SingleVideo from "./components/pages/SingleVideo.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/RestApiTube",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/RestApiTube",
         element: <Home />,
       },
       {
-        path: "/videos/:videoId",
+        path: "videos/:videoId",
         element: <SingleVideo />,
       },
       {
-        path: "/videos/add",
+        path: "videos/add",
         element: <AddVideo />,
       },
       {
-        path: "/videos/edit/:videoId",
+        path: "videos/edit/:videoId",
         element: <EditVideo />,
       },
     ],
